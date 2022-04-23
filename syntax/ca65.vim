@@ -39,6 +39,8 @@ syntax match ca65Label '\<[a-z_][0-9a-z_]*:'he=e-1
 
 syntax region ca65Comment start=';' end='$' contains=ca65Todo,@Spell
 
+syntax keyword ca65AddressSize zeropage absolute
+
 syntax keyword ca65Todo contained TODO FIXME XXX NOTE HACK
 
 syntax match ca65UnknownDirective '\.[a-z_][0-9a-z_]*\>'
@@ -102,6 +104,7 @@ highlight default link ca65Operator Operator
 highlight default link ca65SpecialChar SpecialChar
 highlight default link ca65Label Identifier
 highlight default link ca65Comment Comment
+highlight default link ca65AddressSize StorageClass
 highlight default link ca65Todo Todo
 highlight default link ca65UnknownDirective Error
 highlight default link ca65Directive PreProc
