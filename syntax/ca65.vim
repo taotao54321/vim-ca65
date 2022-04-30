@@ -11,6 +11,8 @@ syntax match ca65BinNumber '%[01]\+\>'
 syntax region ca65String start='"' skip='\\\\\|\\"' end='"'
 syntax match ca65Character "'[^\\]'"
 
+syntax match ca65UnknownDirective '\.[a-z_][0-9a-z_]*\>'
+
 syntax match ca65Operator '+'
 syntax match ca65Operator '-'
 syntax match ca65Operator '\~'
@@ -19,6 +21,7 @@ syntax match ca65Operator '>'
 syntax match ca65Operator '\^'
 syntax match ca65Operator '\*'
 syntax match ca65Operator '/'
+syntax match ca65Operator '\.mod'
 syntax match ca65Operator '&'
 syntax match ca65Operator '<<'
 syntax match ca65Operator '>>'
@@ -42,8 +45,6 @@ syntax region ca65Comment start=';' end='$' contains=ca65Todo,@Spell
 syntax keyword ca65AddressSize zeropage absolute
 
 syntax keyword ca65Todo contained TODO FIXME XXX NOTE HACK
-
-syntax match ca65UnknownDirective '\.[a-z_][0-9a-z_]*\>'
 
 syntax match ca65Directive '\.define\>'
 syntax match ca65Directive '\.endmacro\>'
