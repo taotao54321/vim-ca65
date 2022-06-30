@@ -54,6 +54,8 @@ syntax match ca65Directive '\.include\>'
 syntax match ca65Directive '\.macro\>'
 syntax match ca65Directive '\.segment\>'
 syntax match ca65Directive '\.setcpu\>'
+syntax match ca65Directive '\.undef\>'
+syntax match ca65Directive '\.undefine\>'
 
 syntax match ca65DataDirective '\.addr\>'
 syntax match ca65DataDirective '\.asciiz\>'
