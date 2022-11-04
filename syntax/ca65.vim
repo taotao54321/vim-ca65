@@ -94,6 +94,9 @@ syntax keyword ca65SpecialMnemonic sei
 syntax keyword ca65SpecialMnemonic tsx
 syntax keyword ca65SpecialMnemonic txs
 
+syntax keyword ca65SpecialMnemonic PUSH_A PUSH_X PUSH_Y PUSH
+syntax keyword ca65SpecialMnemonic POP_A POP_X POP_Y POP
+
 syntax case match
 
 highlight default link ca65DecNumber ca65Number
