@@ -69,7 +69,9 @@ syntax match ca65DataDirective '\.res\>'
 syntax match ca65DataDirective '\.word\>'
 
 syntax match ca65LinkerDirective '\.export\>'
+syntax match ca65LinkerDirective '\.exportzp\>'
 syntax match ca65LinkerDirective '\.import\>'
+syntax match ca65LinkerDirective '\.importzp\>'
 syntax match ca65LinkerDirective '\.org\>'
 
 syntax keyword ca65SpecialMnemonic bcc
