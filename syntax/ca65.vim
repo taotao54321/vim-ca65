@@ -96,6 +96,33 @@ syntax keyword ca65SpecialMnemonic sei
 syntax keyword ca65SpecialMnemonic tsx
 syntax keyword ca65SpecialMnemonic txs
 
+" HuC6280
+syntax keyword ca65SpecialMnemonic bbr0
+syntax keyword ca65SpecialMnemonic bbr1
+syntax keyword ca65SpecialMnemonic bbr2
+syntax keyword ca65SpecialMnemonic bbr3
+syntax keyword ca65SpecialMnemonic bbr4
+syntax keyword ca65SpecialMnemonic bbr5
+syntax keyword ca65SpecialMnemonic bbr6
+syntax keyword ca65SpecialMnemonic bbr7
+syntax keyword ca65SpecialMnemonic bbs0
+syntax keyword ca65SpecialMnemonic bbs1
+syntax keyword ca65SpecialMnemonic bbs2
+syntax keyword ca65SpecialMnemonic bbs3
+syntax keyword ca65SpecialMnemonic bbs4
+syntax keyword ca65SpecialMnemonic bbs5
+syntax keyword ca65SpecialMnemonic bbs6
+syntax keyword ca65SpecialMnemonic bbs7
+syntax keyword ca65SpecialMnemonic bra
+syntax keyword ca65SpecialMnemonic bsr
+syntax keyword ca65SpecialMnemonic phx
+syntax keyword ca65SpecialMnemonic phy
+syntax keyword ca65SpecialMnemonic plx
+syntax keyword ca65SpecialMnemonic ply
+syntax keyword ca65SpecialMnemonic set
+syntax keyword ca65SpecialMnemonic tam
+syntax keyword ca65SpecialMnemonic tma
+
 syntax keyword ca65SpecialMnemonic PUSH_A PUSH_X PUSH_Y PUSH
 syntax keyword ca65SpecialMnemonic POP_A POP_X POP_Y POP
 
