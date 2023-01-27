@@ -46,6 +46,7 @@ syntax keyword ca65AddressSize zeropage absolute
 
 syntax keyword ca65Todo contained TODO FIXME XXX NOTE HACK
 
+syntax match ca65Directive '\.charmap\>'
 syntax match ca65Directive '\.define\>'
 syntax match ca65Directive '\.endmacro\>'
 syntax match ca65Directive '\.feature\>'
