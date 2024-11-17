@@ -46,6 +46,8 @@ syntax keyword ca65AddressSize zeropage absolute
 
 syntax keyword ca65Todo contained TODO FIXME XXX NOTE HACK
 
+syntax match ca65Directive '\.a16\>'
+syntax match ca65Directive '\.a8\>'
 syntax match ca65Directive '\.charmap\>'
 syntax match ca65Directive '\.define\>'
 syntax match ca65Directive '\.delmac\>'
@@ -60,6 +62,8 @@ syntax match ca65Directive '\.endscope\>'
 syntax match ca65Directive '\.error\>'
 syntax match ca65Directive '\.exitmacro\>'
 syntax match ca65Directive '\.feature\>'
+syntax match ca65Directive '\.i16\>'
+syntax match ca65Directive '\.i8\>'
 syntax match ca65Directive '\.if\>'
 syntax match ca65Directive '\.ifblank\>'
 syntax match ca65Directive '\.ifconst\>'
@@ -110,6 +114,7 @@ syntax keyword ca65SpecialMnemonic bpl
 syntax keyword ca65SpecialMnemonic brk
 syntax keyword ca65SpecialMnemonic bvc
 syntax keyword ca65SpecialMnemonic bvs
+syntax keyword ca65SpecialMnemonic cld
 syntax keyword ca65SpecialMnemonic cli
 syntax keyword ca65SpecialMnemonic jmp
 syntax keyword ca65SpecialMnemonic jsr
@@ -119,9 +124,39 @@ syntax keyword ca65SpecialMnemonic pla
 syntax keyword ca65SpecialMnemonic plp
 syntax keyword ca65SpecialMnemonic rti
 syntax keyword ca65SpecialMnemonic rts
+syntax keyword ca65SpecialMnemonic sed
 syntax keyword ca65SpecialMnemonic sei
 syntax keyword ca65SpecialMnemonic tsx
 syntax keyword ca65SpecialMnemonic txs
+
+" 65816
+syntax keyword ca65SpecialMnemonic bra
+syntax keyword ca65SpecialMnemonic brl
+syntax keyword ca65SpecialMnemonic cop
+syntax keyword ca65SpecialMnemonic jml
+syntax keyword ca65SpecialMnemonic jsl
+syntax keyword ca65SpecialMnemonic pea
+syntax keyword ca65SpecialMnemonic pei
+syntax keyword ca65SpecialMnemonic per
+syntax keyword ca65SpecialMnemonic phb
+syntax keyword ca65SpecialMnemonic phd
+syntax keyword ca65SpecialMnemonic phk
+syntax keyword ca65SpecialMnemonic phx
+syntax keyword ca65SpecialMnemonic phy
+syntax keyword ca65SpecialMnemonic plb
+syntax keyword ca65SpecialMnemonic pld
+syntax keyword ca65SpecialMnemonic plx
+syntax keyword ca65SpecialMnemonic ply
+syntax keyword ca65SpecialMnemonic rep
+syntax keyword ca65SpecialMnemonic rtl
+syntax keyword ca65SpecialMnemonic sep
+syntax keyword ca65SpecialMnemonic stp
+syntax keyword ca65SpecialMnemonic tcd
+syntax keyword ca65SpecialMnemonic tcs
+syntax keyword ca65SpecialMnemonic tdc
+syntax keyword ca65SpecialMnemonic tsc
+syntax keyword ca65SpecialMnemonic wai
+syntax keyword ca65SpecialMnemonic xce
 
 " HuC6280
 syntax keyword ca65SpecialMnemonic bbr0
@@ -140,12 +175,12 @@ syntax keyword ca65SpecialMnemonic bbs4
 syntax keyword ca65SpecialMnemonic bbs5
 syntax keyword ca65SpecialMnemonic bbs6
 syntax keyword ca65SpecialMnemonic bbs7
-syntax keyword ca65SpecialMnemonic bra
+"syntax keyword ca65SpecialMnemonic bra
 syntax keyword ca65SpecialMnemonic bsr
-syntax keyword ca65SpecialMnemonic phx
-syntax keyword ca65SpecialMnemonic phy
-syntax keyword ca65SpecialMnemonic plx
-syntax keyword ca65SpecialMnemonic ply
+"syntax keyword ca65SpecialMnemonic phx
+"syntax keyword ca65SpecialMnemonic phy
+"syntax keyword ca65SpecialMnemonic plx
+"syntax keyword ca65SpecialMnemonic ply
 syntax keyword ca65SpecialMnemonic set
 syntax keyword ca65SpecialMnemonic tam
 syntax keyword ca65SpecialMnemonic tma
