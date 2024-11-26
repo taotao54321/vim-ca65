@@ -196,6 +196,16 @@ syntax keyword ca65SpecialMnemonic tma
 syntax keyword ca65SpecialMnemonic PUSH_A PUSH_X PUSH_Y PUSH_MPR0 PUSH_MPR1 PUSH_MPR2 PUSH_MPR3 PUSH_MPR4 PUSH_MPR5 PUSH_MPR6 PUSH_MPR7 PUSH
 syntax keyword ca65SpecialMnemonic POP_A POP_X POP_Y POP_MPR0 POP_MPR1 POP_MPR2 POP_MPR3 POP_MPR4 POP_MPR5 POP_MPR6 POP_MPR7 POP
 
+" 65816 macro
+syntax keyword ca65SpecialMnemonic phaw
+syntax keyword ca65SpecialMnemonic phxw
+syntax keyword ca65SpecialMnemonic phyw
+syntax keyword ca65SpecialMnemonic plaw
+syntax keyword ca65SpecialMnemonic plxw
+syntax keyword ca65SpecialMnemonic plyw
+syntax keyword ca65SpecialMnemonic REP_A16 REP_A16_I16 REP_I16
+syntax keyword ca65SpecialMnemonic SEP_A8 SEP_A8_I8 SEP_I8
+
 syntax case match
 
 highlight default link ca65DecNumber ca65Number
