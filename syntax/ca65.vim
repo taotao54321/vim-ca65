@@ -208,7 +208,7 @@ syntax keyword ca65SpecialMnemonic POPW
 syntax keyword ca65SpecialMnemonic PUSHW
 syntax keyword ca65SpecialMnemonic REP_A16 REP_A16_I16 REP_I16
 syntax keyword ca65SpecialMnemonic SEP_A8 SEP_A8_I8 SEP_I8
-syntax keyword ca65SpecialMnemonic SET_DBR
+syntax keyword ca65SpecialMnemonic SET_DBR SET_DBR_A SET_DBR_K
 
 syntax case match
 
