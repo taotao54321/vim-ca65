@@ -4,9 +4,9 @@ endif
 
 syntax case ignore
 
-syntax match ca65DecNumber '\<[0-9]\+\>'
-syntax match ca65HexNumber '\$[0-9a-f]\+\>'
-syntax match ca65BinNumber '%[01]\+\>'
+syntax match ca65DecNumber '\<[0-9_]\+\>'
+syntax match ca65HexNumber '\$[0-9a-f_]\+\>'
+syntax match ca65BinNumber '%[01_]\+\>'
 
 syntax region ca65String start='"' skip='\\\\\|\\"' end='"'
 syntax match ca65Character "'[^\\]'"
@@ -43,6 +43,8 @@ syntax match ca65Label '\<[a-z_][0-9a-z_]*:'he=e-1
 syntax region ca65Comment start=';' end='$' contains=ca65Todo,@Spell
 
 syntax keyword ca65AddressSize zeropage absolute
+
+syntax keyword ca65Feature underline_in_numbers
 
 syntax keyword ca65Todo contained TODO FIXME XXX NOTE HACK
 
@@ -224,6 +226,7 @@ highlight default link ca65Operator Operator
 highlight default link ca65SpecialChar SpecialChar
 highlight default link ca65Label Identifier
 highlight default link ca65Comment Comment
+highlight default link ca65Feature Keyword
 highlight default link ca65AddressSize StorageClass
 highlight default link ca65Todo Todo
 highlight default link ca65UnknownDirective Error
